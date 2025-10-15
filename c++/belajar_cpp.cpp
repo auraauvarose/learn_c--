@@ -1,51 +1,31 @@
 // File: belajar_cpp.cpp
 // Alur Belajar C++ (Learning Flow for C++)
-//
-// 1. Pengenalan Dasar C++
-//    - Struktur program C++
-//    - Sintaks dasar: variabel, tipe data, input/output
-//    - Komentar dan konvensi penulisan kode
-//
-// 2. Kontrol Alur Program
-//    - Percabangan: if, else if, else, switch
-//    - Perulangan: for, while, do-while
-//
-// 3. Fungsi
-//    - Deklarasi dan definisi fungsi
-//    - Parameter dan nilai kembali (return)
-//    - Fungsi rekursif
-//
-// 4. Array dan String
-//    - Array satu dan multidimensi
-//    - Manipulasi string dasar
-//
-// 5. Pointer dan Referensi
-//    - Konsep pointer dan operasi dasar
-//    - Referensi dan penggunaannya
-//
-// 6. Struktur Data Dasar
-//    - Struct dan enum
-//
-// 7. Pemrograman Berorientasi Objek (OOP)
-//    - Kelas dan objek
-//    - Enkapsulasi, pewarisan, dan polimorfisme
-//
-// 8. Standard Template Library (STL)
-//    - Vector, list, map, set, dan algoritma dasar
-//
-// 9. Penanganan Error dan Exception
-//    - Try, catch, throw
-//
-// 10. Praktik dan Proyek Kecil
-//     - Membuat program sederhana untuk mengaplikasikan konsep yang dipelajari
-//
-// Contoh Program Sederhana: Hello World
+// Contoh program sederhana: memeriksa genap/ganjil
 
 #include <iostream>
 
+using namespace std;
+
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    int angka1;
+    cout << "Masukkan angka = ";
+    if (!(cin >> angka1)) {
+        cerr << "Input tidak valid\n";
+        return 1;
+    }
+    
+    if (angka1 % 2 == 0) {
+        cout << angka1 << " adalah angka genap" << endl;
+    } else {
+        cout << angka1 << " adalah angka ganjil" << endl;
+        // Contoh else di dalam else:
+        if (angka1 > 0) {
+            cout << "Angka ganjil tersebut juga merupakan bilangan positif." << endl;
+        } else {
+            cout << "Angka ganjil tersebut adalah bilangan negatif atau nol." << endl;
+        }
+    }
+    
+    cout << "Selesai" << endl;
     return 0;
 }
-
-// variabel:  c++ 
