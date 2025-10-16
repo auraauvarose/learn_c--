@@ -34,12 +34,33 @@ void tipeDatacharacter() {
     cout << endl; 
 }
 
+// Tipe data Integral (int) 
+void tipeDataIntegral() {
+    int x,y,z;
+    x = 10; y = 20;
+    z = x + y;
+    cout << "Hassilnya :" << z;
+    cout << endl;
+}
+
+// Tipe data Floating Point (float)
+void tipeDataFloating() {
+    float jari, hasil;
+    const float p = 3.14;
+
+    cout << "Masukan jumlah jari-jari; "; cin >> jari;
+    hasil = (jari * p) * 2;
+    cout << "Hasilnya: " << hasil;
+    cout << endl;
+}
 
 int main() {
     // Panggil fungsi
     tampilkanUkuranData();
     tipeDataBoolean();
     tipeDatacharacter();
+    tipeDataIntegral();
+    tipeDataFloating();
     return 0;
 }
 
