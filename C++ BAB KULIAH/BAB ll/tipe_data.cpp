@@ -24,7 +24,6 @@ void tipeDataBoolean() {
     cout << endl;
 }
 
-
 // Tipe data Character 
 void tipeDatacharacter() {
     char nilai;
@@ -44,7 +43,7 @@ void tipeDataIntegral() {
 }
 
 // Tipe data Floating Point (float)
-void tipeDataFloating() {
+void tipeDataFloatingFloat() {
     float jari, hasil;
     const float p = 3.14;
 
@@ -60,7 +59,7 @@ int main() {
     tipeDataBoolean();
     tipeDatacharacter();
     tipeDataIntegral();
-    tipeDataFloating();
+    tipeDataFloatingFloat();
     return 0;
 }
 
