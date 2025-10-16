@@ -30,3 +30,4 @@ int main() {
     tipeDataBoolean();
     return 0;
 }
+
