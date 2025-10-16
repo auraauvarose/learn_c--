@@ -20,7 +20,18 @@ void tipeDataBoolean() {
     bool hasil;
     cout << "Masukan angka = "; cin >> angka;
     hasil = angka > 10; // true jika benar, false jika salah
-    cout << hasil;
+    cout << hasil; 
+    cout << endl;
+}
+
+
+// Tipe data Character 
+void tipeDatacharacter() {
+    char nilai;
+
+    cout << "Masukan nilai(A/B/C/D): "; cin >> nilai;
+    cout << "Nilai Anda: " << nilai; 
+    cout << endl; 
 }
 
 
@@ -28,6 +39,7 @@ int main() {
     // Panggil fungsi
     tampilkanUkuranData();
     tipeDataBoolean();
+    tipeDatacharacter();
     return 0;
 }
 
