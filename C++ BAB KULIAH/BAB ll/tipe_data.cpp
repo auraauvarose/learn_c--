@@ -53,6 +53,26 @@ void tipeDataFloatingFloat() {
     cout << endl;
 }
 
+// Tipe data Floating Point (double)
+void tipeDataFloatingDouble() {
+    double jari, hasil;
+    const double p = 3.1428;
+
+    cout << "Masukan jumlah jari-jari :"; cin >> jari;
+    hasil = jari * (jari * p);
+    cout << "Hasilnya: " << hasil;
+    cout << endl;
+}
+
+// Tipe data String (string)
+void tipeDataString() {
+    string nama;
+
+    cout << " Masukan nama anda :"; cin >> nama;
+    cout << "Nama Anda adalah : " << nama;
+    cout << endl;
+}
+
 int main() {
     // Panggil fungsi
     tampilkanUkuranData();
@@ -60,6 +80,8 @@ int main() {
     tipeDatacharacter();
     tipeDataIntegral();
     tipeDataFloatingFloat();
+    tipeDataFloatingDouble();
+    tipeDataString();
     return 0;
 }
 
