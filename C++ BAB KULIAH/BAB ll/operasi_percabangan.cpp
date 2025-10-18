@@ -25,5 +25,6 @@ void dua_kondisi() {
 
 int main() {
     contoh_if();
+    dua_kondisi();
     return 0;
 }
