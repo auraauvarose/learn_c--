@@ -74,11 +74,21 @@ void contoh_switch_case() {
     }
 }
 
+
+void perulangan_for() {
+    for (int i = 1; i <= 5 ; i++) {
+        std::cout << "Perulangan ke-" << i << std::endl;
+    }
+}
+
+
+
 int main() {
     contoh_if();
     dua_kondisi();
     lebih_dari_dua_kondisi();
     if_bersarang();
     contoh_switch_case();
+    perulangan_for();
     return 0;
 }
