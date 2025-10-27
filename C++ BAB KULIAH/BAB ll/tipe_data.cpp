@@ -53,7 +53,7 @@ void tipeDataFloatingFloat() {
     cout << endl;
 }
 
-// Tipe data Floating Point (double)
+// Tipe data Floating Point (double) double adalah tipe data dalam C++ yang berfungsi untuk menyimpan bilangan pecahan atau bilangan desimal.
 void tipeDataFloatingDouble() {
     double jari, hasil;
     const double p = 3.1428;
