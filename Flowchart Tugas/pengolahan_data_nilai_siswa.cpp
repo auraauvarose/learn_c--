@@ -26,6 +26,47 @@ int main(){
     int jumlah;
     const int MAX = 100;
 
+    string nama_pelajaran[MAX];
+    double nilai[MAX];
+
+    cout << "Masukan nama siswa: ";
+    getline(cin, namasiswa);
+
+    cout << "Masukan jumlah pelajaran: ";
+    cin >> jumlah;
+
+    // loop 
+    while (i < jumlah){
+        cout << "Masukan nama pelajaran ke-" << (i + 1) << ": ";
+        cin >> nama_pelajaran[i];
+
+        cout << "Masukan nilai pelajaran ";
+        cin >> nilai[i];
+
+        total += nilai[i];
+        i++;
+    }
+
+    // hitung rata rata
+    double rata = total / jumlah;
+
+    // Keputusan 
+    string status;
+    if (rata >= KRITERIA_LULUS) {
+        status = "LULUS";
+    } else {
+        status = "TIDAK LULUS";
+    }
+
+    // Output hasil
+    cout << fixed << setprecision(2);
+    cout << "\n====================================\n";
+    cout << "Nama Siswa        : " << namasiswa << endl;
+    cout << "Rata-rata Nilai   : " << rata << endl;
+    cout << "Status Kelulusan  : " << status << endl;
+    cout << "====================================\n";
+
+    return 0;
 
 }
 
