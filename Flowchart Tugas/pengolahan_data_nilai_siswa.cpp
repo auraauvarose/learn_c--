@@ -66,7 +66,7 @@ int main(){
     cout << "Status Kelulusan  : " << status << endl;
     cout << "====================================\n";
 
-    return 0;
+    return 0; 
 
 }
 
