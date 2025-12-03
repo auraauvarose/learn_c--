@@ -20,6 +20,7 @@ int main(){
     double total = 0;
     int i = 0;
     const int KRITERIA_LULUS = 75;
+    
 
     // variabel input
     string namasiswa;
