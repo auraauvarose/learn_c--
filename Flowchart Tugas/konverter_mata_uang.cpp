@@ -14,9 +14,9 @@ int main(){
     double hasil_konversi = 0.0;
     string nama_mata_uang;
 
-    cout << "==============================" << endl;
-    cout << "  KONVERTER MATA UANG RUPIAH  " << endl;
-    cout << "==============================" << endl;
+    cout << "|==============================|" << endl;
+    cout << "|  KONVERTER MATA UANG RUPIAH  |" << endl;
+    cout << "|==============================|" << endl;
     cout << endl;
 
     cout << " Masukan jumlah uang rupiah: ";
