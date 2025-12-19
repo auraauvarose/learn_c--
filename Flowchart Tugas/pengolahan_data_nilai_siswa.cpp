@@ -8,10 +8,10 @@ tugas boleh di tulis tangan atau di ketik
 minggu depan di konsultasikan
 */
 
-
 #include <iostream>
 #include <string>
 #include <iomanip>
+
 
 using namespace std;
 

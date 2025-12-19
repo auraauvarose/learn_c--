@@ -17,6 +17,8 @@ int main(){
     cout << "|==============================|" << endl;
     cout << "|  KONVERTER MATA UANG RUPIAH  |" << endl;
     cout << "|==============================|" << endl;
+    cout << "|  Dibuat Oleh Aura Auvarose   |" << endl;
+    cout << "|==============================|" << endl;
     cout << endl;
 
     cout << " Masukan jumlah uang rupiah: ";
