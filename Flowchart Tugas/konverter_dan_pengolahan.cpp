@@ -4,8 +4,6 @@
 
 using namespace std;
 
-
-
 // Fungsi untuk konverter mata uang
 void konverterMataUang() {
     const double Tukar_USD = 16604.0;
@@ -28,7 +26,7 @@ void konverterMataUang() {
     cout << "|3. Yen Jepang (JPY)        |" << endl;
     cout << "|===========================|" << endl;
     cin >> pilihan;
-    cout << endl;
+    cout << endl;   
 
     pilihan = tolower(pilihan);
 
@@ -46,10 +44,70 @@ void konverterMataUang() {
         return;
     }
 
+    cout << "hasil konversi" << endl;
+    cout << endl;
 
+    cout << fixed << setprecision(2);
 
+    cout << "Nilai IDR: " << jumlah_rupiah << " Rupiah" << endl;
+    cout << "Nilai KOnversi: " << hasil_konversi << " " << nama_matauang << endl;
 
 }
+
+//FUngsi pengolahan data nilai siswa
+void pengolahanDataSiswa() { 
+    double total = 0;
+    int i = 0
+    const int KRITERIA_LULUS = 75;
+
+        string namasiswa;
+    int jumlah;
+    const int MAX = 100;
+
+    string nama_pelajaran[MAX];
+    double nilai[MAX];
+
+    cout << "Masukan nama siswa: ";
+    getline(cin, namasiswa);
+
+    cout << "Masukan jumlah pelajaran: ";
+    cin >> jumlah;
+
+    // loop 
+    while (i < jumlah){
+        cout << "Masukan nama pelajaran ke-" << (i + 1) << ": ";
+        cin >> nama_pelajaran[i];
+
+        cout << "Masukan nilai pelajaran ";
+        cin >> nilai[i];
+
+        total += nilai[i];
+        i++;
+    }
+
+    // hitung rata rata
+    double rata = total / jumlah;
+
+    // Keputusan 
+    string status;
+    if (rata >= KRITERIA_LULUS) {
+        status = "LULUS";
+    } else {
+        status = "TIDAK LULUS";
+    }
+
+    // Output hasil
+    cout << fixed << setprecision(2);
+    cout << "\n====================================\n";
+    cout << "Nama Siswa        : " << namasiswa << endl;
+    cout << "Rata-rata Nilai   : " << rata << endl;
+    cout << "Status Kelulusan  : " << status << endl;
+    cout << "====================================\n";
+
+    return; 
+
+}
+
 
 
 int main() {
@@ -61,9 +119,27 @@ int main() {
         cout << "2. Pengolahan Data Sederhana" << endl;
         cout << "3. Keluar" << endl;
         cout << "|==============================|" << endl;
+        cout << "Pilihan menu 1 sampai 3" << endl;
+        cin >> pilihan_menu;
+
 
         switch (pilihan_menu) {
-            
+            case 1:
+                konverterMataUang();
+                break;
+
+            case 2:
+                pengolahanDataSiswa();
+                break;
+
+            case 3:
+                cout << "Keluar dari program." << endl;
+                break;
+
+        default:
+                cout << "Pilihan tidak valid!" << endl;
+                break;
         }
-    }
-} 
+    } while (pilihan_menu != 3);
+    return 0;
+}
