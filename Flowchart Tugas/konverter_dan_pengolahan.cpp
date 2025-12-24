@@ -90,6 +90,14 @@ void pengolahanDataSiswa() {
     cout << "====================================\n";
 }
 
+cout << endl;
+
+
+void keluarprogram() {
+    cout << "NOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO" << endl;
+    cout << "ANDA TELAH KELUAR DARI PROGRAM" << endl;
+}
+
 int main() {
     int pilihan_menu;
     
@@ -111,7 +119,7 @@ int main() {
                 pengolahanDataSiswa();
                 break;
             case 3:
-                cout << "Keluar dari program." << endl;
+                keluarprogram();
                 break;
             default:
                 cout << "Pilihan tidak valid!" << endl;
