@@ -90,8 +90,6 @@ void pengolahanDataSiswa() {
     cout << "====================================\n";
 }
 
-cout << endl;
-
 
 void keluarprogram() {
     cout << "NOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO" << endl;
