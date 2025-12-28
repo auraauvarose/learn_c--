@@ -5,7 +5,6 @@
 
 using namespace std;
 
-// --- FUNGSI BANTUAN: MENDAPATKAN WAKTU SEKARANG ---
 string ambilWaktu() {
     time_t now = time(0);
     char* dt = ctime(&now);
@@ -14,8 +13,6 @@ string ambilWaktu() {
     return waktu;
 }
 
-// --- BAGIAN 1: REGISTRASI (Menyiapkan Data Awal) ---
-// Ini untuk mengisi 'Database' user agar bisa dilogin nanti
 void registrasi() {
     string nim, nama, password;
     cout << "\n=== DAFTAR AKUN BARU ===" << endl;
@@ -34,7 +31,7 @@ void registrasi() {
     cout << ">> SUKSES: Data tersimpan di Database (data_absensi.txt)!" << endl;
 }
 
-// --- BAGIAN 2: LOGIN (Sesuai Flowchart 'Benar?') ---
+
 bool login(string& nimLogin) {
     string nimInput, passInput;
     string dbNim, dbPass, dbNama;
@@ -72,7 +69,7 @@ bool login(string& nimLogin) {
     return ketemu; 
 }
 
-// --- BAGIAN 3: ABSENSI (Sesuai Flowchart 'Simpan Absen') ---
+
 void prosesAbsen(string nim) {
     char konfirmasi;
     cout << "\nApakah Anda ingin absen sekarang? (y/n): ";
@@ -94,7 +91,6 @@ void prosesAbsen(string nim) {
     }
 }
 
-// --- MAIN PROGRAM (Alur Utama Flowchart) ---
 int main() {
     int pilihan;
     string userNIM;

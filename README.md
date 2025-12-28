@@ -13,9 +13,22 @@
    4. **Add to PATH:** Add the path to the MinGW bin folder (e.g., C:\msys64\ucrt64\bin) to your Windows environment variables so VS Code can find the compiler.
    5. Configure VS Code: Follow the <a href="https://code.visualstudio.com/docs/cpp/config-mingw">official VS Code documentation</a> to configure your project to use the MinGW compiler. 
 
+## Run Program 
+membuat kompilasi 
+```
+g++ nama_file -o nama_file_di_kompilasi
+```
+jalankan file kompilasi
+```
+./nama_file_di_kompilasi
+```
+
+atau bisa membaca <a href="https://code.visualstudio.com/docs/cpp/config-mingw">official VS Code documentation</a> 
+
 ## 📁Absensi Mahasiswa
 Sistem ini menggunakan penyimpanan file eksternal untuk menyimpan data akun dan log kehadiran.
-``` 
+
+```cpp
 // Menghasilkan timestamp otomatis untuk setiap absen
 string ambilWaktu() {
     time_t now = time(0);
@@ -26,5 +39,8 @@ string ambilWaktu() {
 }
  ```
 
- ## Konverter Mata Uang (IDR)
- 
+setelah berhasil buat akun atau berhasil absen akan ada 2 file yaitu ```data_absensi.txt``` dan ```log_absensi.txt``` yang dibuat otomatis untuk menyimpan log absen dan data login.
+
+## Konverter Mata Uang (IDR)
+
+
