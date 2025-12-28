@@ -12,4 +12,4 @@ di repositories ini saya belajar mengenal c++ lebih dekat, dari membuat perhitun
    1. Download and install MSYS2 from the <a href="https://www.msys2.org/">MSYS2 website.</a>
    2. Follow the instructions to update packages and install the GCC compiler using the pacman command within the MSYS2 terminal (the specific commands are detailed in the <a href="https://www.freecodecamp.org/news/how-to-install-c-and-cpp-compiler-on-windows/">freeCodeCamp guide).</a>
 4. **Add to PATH:** Add the path to the MinGW bin folder (e.g., C:\msys64\ucrt64\bin) to your Windows environment variables so VS Code can find the compiler.
-5. Configure VS Code: Follow the <a href="">official VS Code documentation</a> to configure your project to use the MinGW compiler. 
+5. Configure VS Code: Follow the <a href="https://code.visualstudio.com/docs/cpp/config-mingw">official VS Code documentation</a> to configure your project to use the MinGW compiler. 
