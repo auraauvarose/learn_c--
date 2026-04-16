@@ -2,9 +2,7 @@
 using namespace std;
 
 int main() {
-    // ============================================
     // ESCAPE SEQUENCES DALAM C++
-    // ============================================
     
     cout << "\n=== 1. NEWLINE (\\n) ===" << endl;
     cout << "Baris pertama\nBaris kedua\nBaris ketiga" << endl;
