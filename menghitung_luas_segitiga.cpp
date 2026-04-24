@@ -16,3 +16,5 @@ int main() {
     cout << "luas segitiga adalah:" << luas << endl;
     return 0;
 }
+
+
